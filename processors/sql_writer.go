@@ -1,8 +1,9 @@
 package processors
 
 import (
-	"database/sql"
+	_ "database/sql"
 
+	"github.com/jmoiron/sqlx"
 	"github.com/rameshputalapattu/ratchet2/data"
 	"github.com/rameshputalapattu/ratchet2/logger"
 	"github.com/rameshputalapattu/ratchet2/util"
@@ -19,7 +20,7 @@ import (
 // For use-cases where a SQLWriter instance needs to write to
 // multiple tables you can pass in SQLWriterData.
 type SQLWriter struct {
-	writeDB          *sql.DB
+	writeDB          *sqlx.DB
 	TableName        string
 	OnDupKeyUpdate   bool
 	OnDupKeyFields   []string
@@ -37,7 +38,7 @@ type SQLWriterData struct {
 }
 
 // NewSQLWriter returns a new SQLWriter
-func NewSQLWriter(db *sql.DB, tableName string) *SQLWriter {
+func NewSQLWriter(db *sqlx.DB, tableName string) *SQLWriter {
 	return &SQLWriter{writeDB: db, TableName: tableName, OnDupKeyUpdate: true}
 }
 

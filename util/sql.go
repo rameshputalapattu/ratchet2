@@ -6,6 +6,7 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/jmoiron/sqlx"
 	"github.com/kisielk/sqlstruct"
 	"github.com/rameshputalapattu/ratchet2/data"
 	"github.com/rameshputalapattu/ratchet2/logger"
@@ -190,7 +191,7 @@ func ExecuteSQLQuery(db *sql.DB, query string) error {
 // (or an array of valid objects all with the same keys),
 // where the keys are column names and the
 // the values are SQL values to be inserted into those columns.
-func SQLInsertData(db *sql.DB, d data.JSON, tableName string, onDupKeyUpdate bool, onDupKeyFields []string, batchSize int) error {
+func SQLInsertData(db *sqlx.DB, d data.JSON, tableName string, onDupKeyUpdate bool, onDupKeyFields []string, batchSize int) error {
 	objects, err := data.ObjectsFromJSON(d)
 	if err != nil {
 		return err
@@ -213,9 +214,11 @@ func SQLInsertData(db *sql.DB, d data.JSON, tableName string, onDupKeyUpdate boo
 	return insertObjects(db, objects, tableName, onDupKeyUpdate, onDupKeyFields)
 }
 
-func insertObjects(db *sql.DB, objects []map[string]interface{}, tableName string, onDupKeyUpdate bool, onDupKeyFields []string) error {
+func insertObjects(db *sqlx.DB, objects []map[string]interface{}, tableName string, onDupKeyUpdate bool, onDupKeyFields []string) error {
 	logger.Info("SQLInsertData: building INSERT for len(objects) =", len(objects))
 	insertSQL, vals := buildInsertSQL(objects, tableName, onDupKeyUpdate, onDupKeyFields)
+
+	insertSQL = db.Rebind(insertSQL)
 
 	logger.Debug("SQLInsertData:", insertSQL)
 	logger.Debug("SQLInsertData: values", vals)
