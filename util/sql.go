@@ -234,16 +234,16 @@ func insertObjects(db *sqlx.DB, objects []map[string]interface{}, tableName stri
 	if err != nil {
 		return err
 	}
-	lastID, err := res.LastInsertId()
-	if err != nil {
-		return err
-	}
-	rowCnt, err := res.RowsAffected()
-	if err != nil {
-		return err
-	}
+	//lastID, err := res.LastInsertId()
+	//if err != nil {
+	//	return err
+	//}
+	//rowCnt, err := res.RowsAffected()
+	//if err != nil {
+	//	return err
+	//}
 
-	logger.Info(fmt.Sprintf("SQLInsertData: rows affected = %d, last insert ID = %d", rowCnt, lastID))
+	//logger.Info(fmt.Sprintf("SQLInsertData: rows affected = %d, last insert ID = %d", rowCnt, lastID))
 	return nil
 }
 
