@@ -7,7 +7,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/cromon/ratchet2/logger"
+	"github.com/rameshputalapattu/ratchet2/logger"
 )
 
 // JSON is the data type that is passed along all data channels.

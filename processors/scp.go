@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os/exec"
 
-	"github.com/cromon/ratchet2/data"
-	"github.com/cromon/ratchet2/util"
+	"github.com/rameshputalapattu/ratchet2/data"
+	"github.com/rameshputalapattu/ratchet2/util"
 )
 
 // SCP executes the scp command, sending the given file to the given destination.

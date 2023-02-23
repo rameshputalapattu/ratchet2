@@ -5,8 +5,8 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/cromon/ratchet2/data"
-	"github.com/cromon/ratchet2/util"
+	"github.com/rameshputalapattu/ratchet2/data"
+	"github.com/rameshputalapattu/ratchet2/util"
 )
 
 // HTTPRequest executes an HTTP request and passes along the response body.

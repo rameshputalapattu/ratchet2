@@ -3,9 +3,9 @@ package processors
 import (
 	"io"
 
-	"github.com/cromon/ratchet2/data"
-	"github.com/cromon/ratchet2/logger"
-	"github.com/cromon/ratchet2/util"
+	"github.com/rameshputalapattu/ratchet2/data"
+	"github.com/rameshputalapattu/ratchet2/logger"
+	"github.com/rameshputalapattu/ratchet2/util"
 	"github.com/jlaffaye/ftp"
 )
 

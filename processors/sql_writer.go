@@ -3,9 +3,9 @@ package processors
 import (
 	"database/sql"
 
-	"github.com/cromon/ratchet2/data"
-	"github.com/cromon/ratchet2/logger"
-	"github.com/cromon/ratchet2/util"
+	"github.com/rameshputalapattu/ratchet2/data"
+	"github.com/rameshputalapattu/ratchet2/logger"
+	"github.com/rameshputalapattu/ratchet2/util"
 )
 
 // SQLWriter handles INSERTing data.JSON into a

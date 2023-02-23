@@ -43,6 +43,8 @@ github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e/go.mod h1:nSuG5e5P
 github.com/chzyer/test v0.0.0-20180213035817-a1ea475d72b1/go.mod h1:Q3SI9o4m/ZMnBNeIyt5eFwwo7qiLfzFZmjNmxjkiQlU=
 github.com/client9/misspell v0.3.4/go.mod h1:qj6jICC3Q7zFZvVWo7KLAzC3yx5G7kyvSDkc90ppPyw=
 github.com/cncf/udpa/go v0.0.0-20191209042840-269d4d468f6f/go.mod h1:M8M6+tZqaGXZJjfX53e64911xZQV5JYwmTeXPW+k8Sc=
+github.com/cromon/ratchet2 v0.0.0-20210312211124-23619b44cb6a h1:ovWOLbyuXdokb4Y5tdrrm5QHEEYv2/K39weCtPM+nds=
+github.com/cromon/ratchet2 v0.0.0-20210312211124-23619b44cb6a/go.mod h1:Tefk3UZ9fzThc3oDaKTX3IsKrnNh2LSQTmKztriAV/k=
 github.com/dailyburn/bigquery v0.0.0-20171116202005-b6f18972580e h1:XRteWdR5ZaQIO1XAttM5+3z+ZmJJue9efXGm1/BOC/s=
 github.com/dailyburn/bigquery v0.0.0-20171116202005-b6f18972580e/go.mod h1:vzZhYuKQ9uFxIf3V3J9Ue/bO8RssREpxNuNSAb8Yh1E=
 github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=

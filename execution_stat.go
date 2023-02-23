@@ -3,7 +3,7 @@ package ratchet2
 import (
 	"time"
 
-	"github.com/cromon/ratchet2/data"
+	"github.com/rameshputalapattu/ratchet2/data"
 )
 
 type executionStat struct {

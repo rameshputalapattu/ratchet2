@@ -3,7 +3,7 @@ package processors
 import (
 	"database/sql"
 
-	"github.com/cromon/ratchet2/data"
+	"github.com/rameshputalapattu/ratchet2/data"
 )
 
 // SQLReaderWriter performs both the job of a SQLReader and SQLWriter.

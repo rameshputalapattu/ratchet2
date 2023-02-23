@@ -3,7 +3,7 @@ package processors
 import (
 	"io"
 
-	"github.com/cromon/ratchet2/data"
+	"github.com/rameshputalapattu/ratchet2/data"
 )
 
 // IoReaderWriter performs both the job of a IoReader and IoWriter.

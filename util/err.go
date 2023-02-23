@@ -1,6 +1,6 @@
 package util
 
-import "github.com/cromon/ratchet2/logger"
+import "github.com/rameshputalapattu/ratchet2/logger"
 
 // KillPipelineIfErr is an error-checking helper.
 func KillPipelineIfErr(err error, killChan chan error) {

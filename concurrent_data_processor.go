@@ -4,8 +4,8 @@ import (
 	"container/list"
 	"sync"
 
-	"github.com/cromon/ratchet2/data"
-	"github.com/cromon/ratchet2/logger"
+	"github.com/rameshputalapattu/ratchet2/data"
+	"github.com/rameshputalapattu/ratchet2/logger"
 )
 
 // ConcurrentDataProcessor is a DataProcessor that also defines

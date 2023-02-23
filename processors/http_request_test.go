@@ -5,10 +5,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/cromon/ratchet2"
-	"github.com/cromon/ratchet2/data"
-	"github.com/cromon/ratchet2/logger"
-	"github.com/cromon/ratchet2/processors"
+	"github.com/rameshputalapattu/ratchet2"
+	"github.com/rameshputalapattu/ratchet2/data"
+	"github.com/rameshputalapattu/ratchet2/logger"
+	"github.com/rameshputalapattu/ratchet2/processors"
 )
 
 func ExampleGetRequest() {
