@@ -231,6 +231,7 @@ func insertObjects(db *sqlx.DB, objects []map[string]interface{}, tableName stri
 	defer stmt.Close()
 
 	res, err := stmt.Exec(vals...)
+	_ = res
 	if err != nil {
 		return err
 	}
